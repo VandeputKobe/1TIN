@@ -1,0 +1,47 @@
+? 			->user exec commands
+Router>enable 		->om van user exe mode naar priv. mode te gaan
+router#
+
+Router#configure terminal		->om naar de confic mode te gaan
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#
+
+Router(config)#interface gigabitEthernet 0/0 	-> een netwerk interface een ipadress geven en aanschakelen
+Router(config-if)#ip address 192.168.1.1 255.255.255.0
+Router(config-if)#no shutdown
+
+Router(config-if)#exit 			-> om een niveau lager te gaan
+Router(config)#
+
+Router(config)#line vty 0 1		-> telnet aanzetten met wachtwoord vty 0 1 zorgt voor 2 gelijke connecties 0 5 zou dan voor 6 
+Router(config-line)#password PXL	   connecties zorgen
+Router(config-line)#login
+
+Router(config)#line console 0		-> ww op de console rooter zetten
+Router(config-line)#password PXL
+Router(config-line)#login
+
+Router(config)#enable secret PXL	-> ww geencrypteerd zetten op de priv mode
+
+
+Switch(config)#interface vlan1		-> de management zetten op de priv mode
+Switch(config-if)#ip address 192.168.1.254 255.255.255.0
+Switch(config-if)#no shutdown 
+
+Switch(config)#ip default-gateway 192.168.1.1 		-> default gateway toewijzen aan een switch
+Switch(config)#
+
+Switch(config)#hostname B148			-> verander de promt
+B148(config)#
+
+Router#copy run start			-> kopieerd running conf naar starter conf
+
+Router#(config)#service password-encryption		-> versleutelt elk ww in de conf
+
+Router#show run 			-> toont de running conf
+
+Router#show startup-config		-> toont de startup conf
+
+
+
+

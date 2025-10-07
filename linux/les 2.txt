@@ -1,0 +1,4 @@
+echo --					-> version werkt niet
+/usr/bi/echo -- version 		-> werkt wel
+sudo					-> betekent super user do
+history ... 				-> laatste ... commands tonen
