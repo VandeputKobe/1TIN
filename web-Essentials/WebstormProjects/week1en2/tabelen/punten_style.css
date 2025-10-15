@@ -1,0 +1,37 @@
+th, td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+body {
+    background-color: #2b2b2b;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 80%;
+    max-width: 1000px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #4f8cef;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #6facff;
+}
+
+tfoot,.header-header,.periode-header,.vakken {
+    background-color: #27426d;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+

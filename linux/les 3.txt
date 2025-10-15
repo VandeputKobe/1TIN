@@ -1,0 +1,5 @@
+een absoluut pad begint altijd met een /
+
+~= 
+
+een relatief pad begint nooit met een /
