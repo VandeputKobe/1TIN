@@ -1,0 +1,89 @@
+table {
+    border: 4px solid darkred;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+
+td {
+    width: 60px;
+    height: 60px;
+    border: 1px solid darkred;
+    position: relative;
+
+    /* standaard geen vaste achtergrond */
+    background-image: var(--piece, none), var(--field);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: 80%, cover;
+}
+
+
+/* Bordkleuren */
+tr:nth-child(even) td:nth-child(odd),
+tr:nth-child(odd) td:nth-child(even) {
+    --field: url("./assets/zwarte-marmer.jpg");
+}
+
+tr:nth-child(even) td:nth-child(even),
+tr:nth-child(odd) td:nth-child(odd) {
+    --field: url("./assets/witte-marmer.jpg");
+}
+
+td {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ---- Schaakstukken ---- */
+/* wit */
+.dameWit {
+    --piece: url("./assets/dameWit.png");
+}
+.koningWit {
+    --piece: url("./assets/koningWit.png");
+}
+.loperWit {
+    --piece: url("./assets/loperWit.png");
+}
+.torenWit {
+    --piece: url("./assets/torenWit.png");
+}
+.paardWit {
+    --piece: url("./assets/paardWit.png");
+}
+.pionWit {
+    --piece: url("./assets/pionWit.png");
+}
+
+/* zwart */
+.dameZwart {
+    --piece: url("./assets/dameZwart.png");
+}
+.koningZwart {
+    --piece: url("./assets/koningZwart.png");
+}
+.loperZwart {
+    --piece: url("./assets/loperZwart.png");
+}
+.torenZwart {
+    --piece: url("./assets/torenZwart.png");
+}
+.paardZwart {
+    --piece: url("./assets/paardZwart.png");
+}
+.pionZwart {
+    --piece: url("./assets/pionZwart.png");
+}
+
+/* gedeelde stijl voor alle stukken */
+.dameWit, .dameZwart,
+.koningWit, .koningZwart,
+.loperWit, .loperZwart,
+.torenWit, .torenZwart,
+.paardWit, .paardZwart,
+.pionWit, .pionZwart {
+    background-size: 50%, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+}
