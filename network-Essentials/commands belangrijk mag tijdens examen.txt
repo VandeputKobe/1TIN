@@ -42,6 +42,28 @@ Router#show run 			-> toont de running conf
 
 Router#show startup-config		-> toont de startup conf
 
+Router ip domain-name demo.local  -> zet de domain naam als demo.local
+
+Router0(config)#line vty 0 4        ->telnet aanzetten zonder ww met 5 gelijke connecties
+Router0(config-line)#login local
+Router0(config-line)#transport input ssh        -> ssh als protocol instellen
+
+Router0(config)#username student password pxl       -> instellen van een username en een password 
+
+Router0(config)#username student secret pxl         -> instellen van een username met een secret password
+
+Router0(config)#crypto key generate rsa             -> instellen van een 1024 bit encryptie nog integen is 1024 aantal bits 
+The name for the keys will be: Router0.demo.local
+Choose the size of the key modulus in the range of 360 to 4096 for your
+  General Purpose Keys. Choosing a key modulus greater than 512 may take
+  a few minutes.
+
+How many bits in the modulus [512]: 1024
+% Generating 1024 bit RSA keys, keys will be non-exportable...[OK]
+
+
+
+
 
 
 
