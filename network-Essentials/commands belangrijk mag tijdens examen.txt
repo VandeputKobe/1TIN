@@ -61,6 +61,10 @@ Choose the size of the key modulus in the range of 360 to 4096 for your
 How many bits in the modulus [512]: 1024
 % Generating 1024 bit RSA keys, keys will be non-exportable...[OK]
 
+SwitchLeft#show mac address-table       -> mac address table laten zien
+
+SwitchLeft#clear mac address-table      -> mac address table leegmaken
+
 
 
 
