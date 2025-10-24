@@ -42,7 +42,7 @@ Router#show run 			-> toont de running conf
 
 Router#show startup-config		-> toont de startup conf
 
-Router ip domain-name demo.local  -> zet de domain naam als demo.local
+Router0(config) ip domain-name demo.local  -> zet de domain naam als demo.local
 
 Router0(config)#line vty 0 4        ->telnet aanzetten zonder ww met 5 gelijke connecties
 Router0(config-line)#login local
