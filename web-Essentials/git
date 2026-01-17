@@ -1,0 +1,15 @@
+# Zorg dat je op main zit
+git checkout main
+
+# Commit je wijzigingen
+git add .
+git commit -m "Update site"
+
+# Push main naar gh-pages
+git push origin main:gh-pages --force
+
+Dit zegt: “Gebruik mijn main branch om gh-pages branch te overschrijven.”
+
+Je kunt daarna altijd in main blijven werken, en alleen dit commando uitvoeren om updates live te zetten.
+
+Het is veiliger dan handmatig switchen tussen branches. 
