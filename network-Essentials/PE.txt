@@ -1,0 +1,49 @@
+1. VLSM Berekeningen
+Netwerk Leuven → 126 hosts
+
+→ grootste subnet → /25 (128 adressen)
+
+NetworkID Leuven: 192.168.1.0/25
+
+Hostrange: 192.168.1.1 – 192.168.1.126
+
+Broadcast: 192.168.1.127
+
+Netwerk Brussel → 62 hosts
+
+→ /26 (64 adressen)
+
+NetworkID Brussel: 192.168.1.128/26
+
+Hostrange: 192.168.1.129 – 192.168.1.190
+
+Broadcast: 192.168.1.191
+
+✅ 2. IPv4 Adres-toewijzingen (volgens opdracht)
+Netwerk Leuven (/25)
+Device	                        IPv4	                Default gateway
+RouterISP G0/0/0	            192.168.1.1/25	        —
+PC1	                            192.168.1.2/25	        192.168.1.1
+PC2	                            192.168.1.3/25	        192.168.1.1
+SwitchLeuven (mgmt VLAN1)	    192.168.1.126/25	    192.168.1.1
+
+
+Netwerk Brussel (/26)
+Device	                                    IPv4	                Default gateway
+RouterISP G0/0/1	                        192.168.1.129/26        —
+ServerBrussel	                            192.168.1.130/26	    192.168.1.130
+SwitchBrussel (reeds ingesteld voor telnet)	192.168.1.190/26	    192.168.1.129
+
+
+✅ 3. IPv6 Adressering
+Netwerk Leuven – prefix: 2001:db8:1:1::/64
+Device	                      IPv6	                Link-local	        Gateway
+RouterISP G0/0/0	          2001:db8:1:1::1/64	fe80::1:1	        —
+PC1	                          2001:db8:1:1::2/64	fe80::1:2	        fe80::1:1
+PC2	                          2001:db8:1:1::3/64	fe80::1:3	        fe80::1:1
+
+
+Netwerk Brussel – prefix: 2001:db8:1:2::/64
+Device	                      IPv6	                Link-local	        Gateway
+RouterISP G0/0/1	          2001:db8:1:2::1/64	fe80::2:1	        —
+ServerBrussel	              2001:db8:1:2::2/64	fe80::2:2	        fe80::2:1
