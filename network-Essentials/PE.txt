@@ -31,7 +31,7 @@ SwitchLeuven (mgmt VLAN1)	    192.168.1.126/25	    192.168.1.1
 Netwerk Brussel (/26)
 Device	                                    IPv4	                Default gateway
 RouterISP G0/0/1	                        192.168.1.129/26        —
-ServerBrussel	                            192.168.1.130/26	    192.168.1.130
+ServerBrussel	                            192.168.1.130/26	    192.168.1.129
 SwitchBrussel (reeds ingesteld voor telnet)	192.168.1.190/26	    192.168.1.129
 
 
