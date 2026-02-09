@@ -1,0 +1,13 @@
+.feedback-kader {
+    border: 2px solid gray;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 500px;
+    margin: 2rem auto;
+    background-color: #f9f9f9;
+}
+
+.feedback-kader legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+}

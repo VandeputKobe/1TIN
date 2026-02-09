@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oef3</title>
+    <link href="css/formsmail.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+</head>
+<form action="mailto:info@jouwdomein.nl" method="post" enctype="text/plain">
+
+    <fieldset class="feedback-kader">
+        <legend>Feedback lokalen</legend>
+
+        <label>
+            Naam:
+            <input type="text" name="Naam" required>
+        </label>
+
+        <label>
+            Lokaal:
+            <select name="Lokaal" required>
+                <option value="" disabled selected>Kies een lokaal</option>
+                <option value="B051">B051: leslokaal</option>
+                <option value="A210">A210: computerlokaal</option>
+            </select>
+        </label>
+
+        <label>
+            Feedback:
+            <textarea name="Feedback" required></textarea>
+        </label>
+
+        <button type="submit">Verzend</button>
+
+    </fieldset>
+
+</form>
