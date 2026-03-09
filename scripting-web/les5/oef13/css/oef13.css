@@ -1,0 +1,8 @@
+.veld {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.veld label {
+    width: 100px;
+}
